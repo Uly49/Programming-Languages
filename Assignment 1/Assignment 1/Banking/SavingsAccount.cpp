@@ -1,0 +1,16 @@
+//
+// Created by uly49 on 3/7/2022.
+//
+
+#include "SavingsAccount.h" // SavingsAccount class definition
+
+// constructor initializes balance and interest rate
+SavingsAccount::SavingsAccount( double initialBalance, double rate )
+    : Account( initialBalance ) { // initialize base class
+    interestRate = ( rate < 0.0 ) ? 0.0 : rate; // set interestRate
+} // end SavingsAccount constructor
+
+// return the amount of interest earned
+double SavingsAccount::calculateInterest() {
+    return getBalance() * interestRate;
+} // end function calculateInterest
