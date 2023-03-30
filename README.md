@@ -1,3 +1,3 @@
-# Programming-Languages  
+# Programming Languages  
 University of Wisconsin - Parkside  
 CSCI 333
